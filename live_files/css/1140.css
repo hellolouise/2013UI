@@ -1,0 +1,281 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+body {
+	background: #eee;
+	color: #333;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+#headerTop, #headerBottom {
+	background: #fafafa;
+	overflow: hidden;
+}
+
+#headerTop {
+	border-bottom: 1px solid #fff;
+	height: 50px;
+}
+
+#headerBottom {
+}
+
+	h1 {
+		width: 126px;
+		height: 50px;
+		float: left;
+		margin-left: 20px;
+		overflow: hidden;
+		text-indent: -9999px;
+		background: url('../img/wnyc_126x100.png') 0px 50px;
+	}
+	h1:hover {
+		background: url('../img/wnyc_126x100.png') 0px 0px;
+	}
+
+	h2 {
+		font-size: 18px;
+		font-weight: 400;
+		float: left;
+		margin-left: 20px;
+		padding: 15px 0;
+	}
+	#headerBottom h2 {
+		display: none;
+	}
+
+	#share {
+		float: right;
+	}
+	
+	#toggle {
+		width: 55px;
+		height: 50px;
+		float: right;
+		border-left: 1px solid #fff;
+		display: none;
+		text-align: center;
+		color: #000;
+		padding: 8px 0 0 0;
+	}
+	#toggle:hover {
+		background: #333;
+		color: #fff;
+	}
+	
+	p#intro {
+		padding: 15px 20px;
+		font-family: 'Georgia', serif;
+		font-size: 14px;
+		line-height: 1.4em;
+		max-width: 800px;
+	}
+	p#intro a {
+		color: #333;
+		text-decoration: underline;
+	}
+	p#intro a:hover {
+		color: #e51133;
+		text-decoration: underline;
+	}
+
+#legend {
+	width: 100%;
+	background: #444;	
+	color: #fff;
+	padding: 10px 0;
+	font-size: 12px;
+}
+	#legend * {
+		padding: 0 20px;
+	}
+
+#map {
+}
+
+#flyouts, #toolsFlyouts {
+	width: 100%;
+	position: absolute;
+	bottom: 35px;
+	left: 0;
+	padding: 10px 0;
+	z-index: 10;	
+}
+	#flyouts *, #toolsFlyouts * {
+		padding: 0 20px;
+	}
+
+#flyouts {
+	height: ;
+	color: #fff;
+	background: #333;
+}
+
+#toolsFlyouts {
+	height: ;
+	color: #333;
+	background: #ffea00;
+}
+	#toolsFlyouts strong {
+		display: block;
+		margin: 0 0 5px 0;
+	}
+	#toolsFlyouts .closeButton {
+		padding: 0;
+		background: url('../img/close.gif') 0px 0px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		text-indent: -9999px;
+		overflow: hidden;
+	}
+	#toolsFlyouts .closeButton:hover {
+		background: url('../img/close.gif') 0px 50px;
+	}
+
+ul#tools {
+	background: #fafafa;
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+	ul#tools li {
+		height: 25px;
+		vertical-align: middle;
+		padding: 10px 20px 0 20px;
+		list-style: none;
+		font-size: 12px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #e51133;
+		text-decoration: none;
+	}
+	ul#tools li.left {
+		float: left; 
+		border-right: 1px solid #fff;
+	}
+	ul#tools li.right {
+		float: right; 
+		border-left: 1px solid #fff;
+	}
+	ul#tools li:hover {
+		background: #fff;
+		color: #e51133;
+		text-decoration: underline;
+	}
+
+#mobileFlyout {
+	background: #333;
+	border-top: 1px solid #333;
+	color: #fff;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 15;
+}
+	#mobileFlyout p {
+		clear: both;
+	}
+	#mobileFlyout p a {
+		color: #fff;
+	}
+	#mobileFlyout #share {
+		float: left;
+		padding: 20px;
+	}
+	#mobileFlyout #menu {
+		clear: both;
+	}
+	#mobileFlyout #menu a {
+		text-decoration: none;
+		color: #fff;
+	}
+	#mobileFlyout #menu a:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
+	#mobileFlyout #menu li {
+		list-style: none;
+		background: #000;
+		color: #fff;
+		margin: 0 0 1px 0;
+		font-size: 12px;
+		display: block;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	#mobileFlyout #menu li:hover {
+		background: #e51133;
+	}
+	#mobileFlyout #menu li h4 {
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		float: left;
+		padding: 20px;
+	}
+	#mobileFlyout #menu li i {
+		color: #fff;
+		float: right;
+		position: relative;
+		top: 1px;
+		padding: 20px;
+	}
+	#mobileFlyout #menu li.drawer {
+		color: #000;
+		background: #fff;
+		padding: 20px;
+		clear: both;
+		font-size: 14px;
+		display: none;
+	}
+	#mobileFlyout #menu li.drawer strong {
+		font-weight: 900;
+	}
+	#mobileFlyout #menu li.drawer p {
+		font-weight: 400;
+		padding: 10px 0;
+	}
+	#mobileFlyout #menu li.drawer p a {
+		color: #000;
+		text-decoration: underline;
+	}
+	#mobileFlyout #menu li.drawer p a:hover {
+		text-decoration: underline;
+		color: #e51133;
+	}	
+	li#dataDrawer, li#embedDrawer, li#creditsDrawer {
+	}
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 575px) {
+
+	body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+	
+	#headerTop h2, #headerTop #share, #headerBottom p#intro, ul#tools, #toolsFlyouts {
+		display: none;
+	}
+	#headerBottom h2, #toggle, #mobileFlyout {
+		display: inline;
+	}
+	
+
+}

@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>TK | WNYC</title>
+
+	<meta name="author" content="WNYC Data News" />
+	<meta name="description" content="TK" />
+	<meta name="robots" content="index, follow" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	
+	<!-- Web app-able -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Lato Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#embed").click(function(){
+		    $("#embedDrawer").toggle();
+			$('#embed i').toggleClass('icon-minus-sign-alt');
+		});
+		$("#data").click(function(){
+		    $("#dataDrawer").toggle();
+			$('#data i').toggleClass('icon-minus-sign-alt');
+		});
+		$("#credits").click(function(){
+		    $("#creditsDrawer").toggle();
+			$('#credits i').toggleClass('icon-minus-sign-alt');
+		});
+	});
+	</script>
+	
+	<!-- GOOGLE ANALYTICS -->
+	
+<style>
+
+	/*	ISSUE-SPECIFIC STYLES
+	============================ */
+	
+#layoutBackground {
+	background: url(http://bklynr.com/wp/wp-content/themes/bklynr/images/issue-3/issue-3-cover.jpg) 50% 90% no-repeat;  /* SPECIFIC TO A GIVEN ISSUE */
+	 -webkit-background-size: cover; /* You've gotta keep this stuff in here, even though it's not issue-specific */
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+}
+
+.issueHeader .logo {
+	color: rgb(216, 86, 86);  /* SPECIFIC TO A GIVEN ISSUE */
+}
+
+.layoutBox .headlineBox {
+bottom: 32%;
+color: #089491;
+font-size: 1.5em;
+left: 5px;
+width: 33%;
+max-width: 460px;
+-webkit-font-smoothing: antialiased;
+padding: 1em;
+}
+
+.layoutBox .headlineBox h2 {
+font-size: 2.125em;
+line-height: 0.8em;
+padding-bottom: 10px;
+}
+
+.layoutBox .headlineBox .subtitle {
+font-weight: 600;
+color: rgb(100,100,100);
+}
+
+.alsoInThisIssueBox {
+	background-color: rgb(155, 184, 183);  /* SPECIFIC TO A GIVEN ISSUE */
+	color: rgb(60,60,60);  /* SPECIFIC TO A GIVEN ISSUE */
+}
+
+.alsoInThisIssue {
+	color: rgba(255,255,255,0.75);  /* SPECIFIC TO A GIVEN ISSUE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+	/* styles */
+
+}
+
+@media only screen and (max-width: 1050px) {
+	.layoutBox .headlineBox {
+font-size: 1.5em;
+}
+}
+
+@media only screen and (max-width: 950px) {
+	.layoutBox .headlineBox {
+font-size: 1.25em;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+.layoutBox .headlineBox {
+font-size: 1.275em;
+bottom: 26%;
+}
+.layoutBox .headlineBox h2 {
+font-size: 2.25em;
+}
+}
+
+/* iPhones (and other smaller-than-iPad devices) ----------- */
+
+@media only screen and (max-width: 767px) {
+	
+.layoutBox .headlineBox {
+color: #089491;
+font-size: 1.5em;
+width: 75%;
+max-width: 460px;
+-webkit-font-smoothing: antialiased;
+background-color: rgba(245, 245, 245, 0.85);
+padding: 6%;
+float: none;
+margin-left: auto;
+margin-right: auto;
+top: 27%;
+bottom: auto;
+}
+.layoutBox .headlineBox h2 {
+font-size: 1.25em;
+line-height: 0.9em;
+}
+}
+
+</style>
+	
+</head>
+
+<body>
+
+<!-- FACEBOOK JAVASCRIPT SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="container">
+	
+	<div id="headerTop">
+		<a href="http://wnyc.org" target="new"><h1>WNYC</h1></a>
+		<h2>Mapping Swarmageddon</h2>
+		<div id="share">
+			<a>Twitter</a> <a>Facebook</a>
+		</div>
+		<a href=""><div id="toggle">
+			<i class="icon-reorder icon-2x"></i>
+		</div></a>
+	</div>
+	
+	<div id="headerBottom">
+		<h2>Mapping Swarmageddon</h2>
+		<p id="intro">Help Radiolab predict the 17-year cicadas' arrival from GA to CT. We're watching soil temps 8" down, waiting for readings of 64° F — when the cicadas should start to emerge. Use a <a href="">garden-store soil thermometer</a>, or build a detector.</p>
+	</div>
+	
+	<div id="legend">
+		<p>Legend goes here</p>
+	</div>
+	
+	<div id="map">
+		Map content here
+	</div>
+	
+	<div id="flyouts">
+		<span>Flyouts go here</span>
+	</div>
+	
+	<div id="toolsFlyouts">
+		<strong>Data by</strong>
+		<p>Lorem ipsum.</p>
+		<a href=""><div class="closeButton">close</div></a>
+	</div>
+	
+	<ul id="tools">
+		<a href=""><li class="left">Data</li></a>
+		<a href=""><li class="left">Embed</li></a>
+		<a href=""><li class="left">Fullscreen</li></a>
+		<a href=""><li class="right">Credits</li></a>
+		<a href=""><li class="right">Story</li></a>
+	</ul>
+	
+	<div id="mobileFlyout">
+		<h2>Mapping Swarmageddon</h2>
+		<p id="intro">Help Radiolab predict the 17-year cicadas' arrival from GA to CT. We're watching soil temps 8" down, waiting for readings of 64° F — when the cicadas should start to emerge. Use a <a href="">garden-store soil thermometer</a>, or build a detector.</p>
+		<div id="share">
+			<a>Twitter</a> <a>Facebook</a>
+		</div>
+		<ul id="menu">
+			<a href="http://wnyc.org" target="new"><li>
+				<h4>Read full story</h4>
+				<i class="icon-external-link-sign"></i>
+			</li></a>
+			<a href="http://wnyc.org" target="new"><li>
+				<h4>View in new window</h4>
+				<i class="icon-external-link-sign"></i>
+			</li></a>
+			<li id="embed">
+				<h4>Embed</h4>
+				<i class="icon-plus-sign-alt"></i>
+			</li>
+			<li class="drawer" id="embedDrawer">
+				<strong>Link to this map</strong>
+				<p>http://project.wnyc.org/cicadas/map.html</p>
+				<strong>Embed this map</strong>
+				<p>iframe src="http://project.wnyc.org/cicadas/map.html" height="700" width="100%" scrolling="no" frameborder="0"/iframe</p>
+			</li>
+			<li id="data">
+				<h4>Data</h4>
+				<i class="icon-plus-sign-alt"></i>
+			</li>
+			<li class="drawer" id="dataDrawer">
+				<strong>Crowdsourced Reports</strong>
+				<p>Sent to Radiolab using our <a href="">report in form</a> and curated by our editors.</p>
+			</li>
+			<li id="credits">
+				<h4>Credits</h4>
+				<i class="icon-plus-sign-alt"></i>
+			</li>
+			<li class="drawer" id="creditsDrawer">
+				<strong>Link to this map</strong>
+				<p>http://project.wnyc.org/cicadas/map.html</p>
+			</li>
+		</ul>
+	</div>
+	
+</div><!-- #container -->
+
+</body>
+
+</html>
